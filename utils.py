@@ -3,8 +3,7 @@ import pandas as pd
 import pickle as pkl
 
 def load_model():
-    try:
-        
+    try:   
         with open('spam_cls.pkl','rb') as f:
             model=pkl.load(f)
         return model
